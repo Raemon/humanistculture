@@ -1,0 +1,64 @@
+
+/* Parallax base styles
+--------------------------------------------- */
+
+.parallax {
+  z-index: -1;
+  height: 100vh;
+  width:100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width:100%;
+}
+
+.parallax__layer--0 {
+-webkit-transform: translateZ(-1px);
+transform: translateZ(-1px) scale(2);
+}
+.parallax__layer--1 {
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+z-index: 1
+}
+.parallax__layer--2 {
+-webkit-transform: translateZ(.5px);
+transform: translateZ(.5px) scale(.5);
+}
+.parallax__layer--2.5 {
+-webkit-transform: translateZ(.49px);
+transform: translateZ(.49px) scale(.5);
+}
+.parallax__layer--3 {
+-webkit-transform: translateZ(0);
+transform: translateZ(0px) scale(1);
+}
+.parallax__layer--4 {
+-webkit-transform: translateZ(0px);
+transform: translateZ(0px) scale(1);
+}
+
+.parallax__group {
+    transform: translate3d(700px, 0, -800px) rotateY(30deg);
+}
+
+  /* misc
+  --------------------------------------------- */
+  .demo__info {
+    position: absolute;
+    z-index:100;
+    bottom: 1vh;
+    top: auto;
+    font-size:80%;
+    text-align:center;
+    width: 100%;
+  }

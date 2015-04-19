@@ -1,0 +1,90 @@
+<head>
+  <title>Humanist Culture</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="parallax.css">
+  <link rel="icon" sizes="16x16" href="images/favicon.ico?v=2">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="parallax">
+    <div class="parallax__layer parallax__layer--0">
+      <div class="stars"></div>
+    </div>
+    <div class="parallax__layer parallax__layer--1">
+      <span class="scrollingHeader">
+        <div id="title" class="title">Humanist Culture</div>
+      </span>
+
+      {{> actionButtons }}
+      <!-- {{> signup}} -->
+    </div>
+    <div class="parallax__layer parallax__layer--2">
+      <img class="solstice earth" src="images/solstice/earth1.png">
+      <img id="earth" class="solstice earth" src="images/solstice/earth2sun.png">
+    </div>
+    <div class="parallax__layer parallax__layer--4">
+      <img class="storyOfWinter" src="images/storyOfWinter/storyOfWinter1.jpg">
+    </div>
+    <div class="parallax__layer parallax__layer--3">
+      <img class="folkatorium" src="images/folkSpread/folkatorium.png">
+    </div>
+
+  </div>
+
+  <div class="minusScroll">
+    {{> fixedHeader}}
+    <img class="solsticeTitleImage" src="images/solstice/title.png">
+<!-- 
+    <div id="contentFixed" class="contentFixed hidden">
+      {{> content}}
+    </div> -->
+  </div>
+</body>
+
+  
+<template name="fixedHeader">
+  <div class="fixedHeader hidden">
+      <div class="headerMenu">
+        <div class="menuItem left">Secular Solstice</div><div class="menuItem left">•</div>
+        <div class="menuItem left">Ritual Lab</div><div class="menuItem left">•</div>
+        <div class="menuItem left">Blog</div>
+      </div>
+      <div class="title fixedCenter">Humanist Culture</div>
+
+      <iframe name="player" class="musicPlayer" src="https://bandcamp.com/EmbeddedPlayer/album=4284882246/size=large/bgcol=333333/linkcol=e99708/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://humanistculture.bandcamp.com/album/brighter-than-today-a-secular-solstice">Brighter Than Today: A Secular Solstice by Raymond Arnold</a></iframe>
+  </div>
+</template>
+
+
+<template name="actionButtons">
+  <div class="actionButtons">
+    <img class="actionButton" src="images/storyOfWinter/book_link_square.jpg">
+    <img id="playMusic" class="actionButton" src="images/Music/musicPlay_glow.jpg" mouseover="images/music/musicPlay_glow.jpg">
+    <img class="actionButton" src="images/ritualLab.jpg">
+  </div>
+</template>
+
+<template name="signup">
+  <div class="signup">
+    <div>
+      Beautiful art and thriving communities,<br>
+      Celebrating life and reason.
+    </div>
+    <div class="submitForm">
+      <input type="text" class="email" placeholder="E-mail Address">
+      <button class="emailButton">Sign Up</button>
+    </div>
+  </div>
+</template>
+
+
+
+<template name="content">
+
+  <div class="column right catWaving">
+    <img src="images/folkSpread/CatWaving.jpg">
+  </div>
+  <div class="column right storyOfWinter">
+  </div>
+</template>

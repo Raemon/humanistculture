@@ -1,0 +1,298 @@
+	/* CSS declarations go here */
+body {
+	background: black;
+	margin:0px;
+	font-family:"Avenir";
+	font-size:16px;
+	color:rgb(255, 250, 245);
+	line-height:28px;
+	color:#FFFEFC;
+}
+.right {
+	float:right;
+	position:absolute;
+	bottom:0;
+}
+.left {
+	float:left;
+}
+
+.submitForm {
+	padding-top:20px;
+}
+input.email {
+	background-color:rgba(255,249,230, .3);
+	border:solid 1px #FFED99;
+	border-radius: 2px;
+	font-family:"Avenir";
+	font-size:16px;
+	color:#FFEEED;
+	width:269px;
+	padding:7px;
+	margin-right:4px;
+}
+button.emailButton {
+	background-color:#322222;
+	background-opacity:.5;
+	border:solid 1px #FFED99;
+	border-radius: 2px;
+	font-family:"Avenir";
+	font-size:16px;
+	color:#FFFEDD;
+	width:100px;
+	padding:7px;
+}
+
+
+h3 {
+	font-family:"Futura";
+}
+
+.stars {
+	background-image:url("images/stars.png");
+	width:100%;
+	height:200%;
+}
+
+.minusScroll {
+
+}
+.header {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -80%);
+	transform: translate(-50%, -80%);
+}
+
+.scrollingHeader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -80%);
+	transform: translate(-50%, -80%);
+	width:100%;
+	height:180px;
+	background-image:url("images/home/header2.png");
+	background-position:center bottom;
+}
+
+.fixedHeader {
+	position:absolute;
+	top:0;
+	left: 0%;
+	width:100%;
+	background-position:center bottom;
+	height:65px;
+	background-image:url("images/home/empty-header.png");
+}
+@media screen and (max-width: 700px) {
+.column {
+	background-image:url("images/home/empty-header.png");
+	}
+    }}
+    
+
+.headerMenu {
+	position:absolute;
+	bottom:8px;
+	width:100%;
+/*	background-color:black;
+	outline: 1px solid grey;*/
+	padding:6px 0px;
+}
+
+.hidden {
+	opacity:0;
+}
+
+.menuItem {
+	position:relative;
+	bottom:0px;
+	margin-left:20px;
+	font-size:16px;
+	color:rgba(255, 250, 240, .8);
+	cursor:pointer;
+	color:#ddca99
+}
+.menuItem:hover {
+	color:white;
+	text-shadow: 1px 4px 12px 12px #ffffff;
+}
+
+.musicPlayer {
+	position:absolute;
+    right:17px;
+    top:-56px;
+	border:solid 1px #FFED99;
+	border-top:0;
+	border-right:0;
+    height: 120px;
+}
+
+.title {
+	color:white;
+	font-size:32px;
+	font-family: "futura";
+	position: absolute;
+	left: 50%;
+	bottom:0;
+	-webkit-transform: translate(-50%, -20px);
+	transform: translate(-50%, -20px);
+}
+
+.fixedCenter{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-53%, -50%);
+	transform: translate(-53%, -50%);
+}
+
+.center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.intro_text {
+	position: absolute;
+	left: 50%;
+	top: 75%;
+	-webkit-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+	width:38%;
+}
+
+.actionButtons {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width:590px;
+	font-size:20px;
+	-webkit-transform: translate(-50%, 100px);
+	transform: translate(-50%, 100px);
+}
+
+.actionButton {
+	width:150px;
+	height:150px;
+	border:solid 1px #aa8955;
+	margin:0px 20px;
+	opacity:.7;
+	cursor:pointer;
+}
+.actionButton:hover {
+	opacity:1;
+	border:solid 1px #FFED99;
+}
+
+.signup {
+	position: absolute;
+	width:503px;
+	left: 50%;
+	top: 50%;
+	font-size:20px;
+	-webkit-transform: translate(-50%, 100px);
+	transform: translate(-50%, 100px);
+}
+.earth {
+	left: 5%;
+	z-index: -1;
+}
+.stars {
+	z-index: -2;
+}
+.solstice {
+	position: absolute;
+	top: 100%;
+	width:75%;
+}
+.solsticeSubtitle {
+	font-family:"Garamond";
+	font-size:40px;
+	left:50%;
+	color:#FFED99;
+	-webkit-transform: translate(-30%, 0);
+	transform: translate(-30%, 0);
+}
+.solsticeTitle {
+	position:absolute;
+	top:37%;
+	left:0;
+	width:100%;
+	height:35%;
+	background-color:rgba(0,0,0,.5);
+}
+.solsticeTitleImage {
+	position: absolute;
+	top:40%;
+	left:50%;
+	width:40%;
+	display:none;
+}
+
+.folkatorium {
+	position: absolute;
+	top: 155%;
+	left:50%;
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+
+.storyOfWinter {
+	position: absolute;
+	top: calc(155% + 400px);
+	left:50%;
+	width:100%;
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+
+.contentFixed {
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	margin:0px;
+}
+
+.buffer {
+	margin-right:37px;
+}
+
+
+.column {
+	width:20%;
+	height:auto;
+	margin:2px;
+	background-size:100% 100%;
+	border:solid 1px #FFED99;
+}
+@media screen and (max-width: 700px) {
+.column {
+    width:50%;
+    }}
+
+
+.folk {
+	position: absolute;
+	top:125%;
+	left:0;
+	width:100%;
+}
+
+.catWaving {
+	background-image:url("images/folkSpread/CatWaving.jpg");
+}
+.willLydia {
+	background-image:url("images/folkSpread/willLydia.jpg");
+}
+.rationalRitual {
+	background-image:url("images/ritualLab.jpg");
+}
+
+.storyOfWinter {
+	background-image:url("images/storyOfWinter/link.jpg");
+}
